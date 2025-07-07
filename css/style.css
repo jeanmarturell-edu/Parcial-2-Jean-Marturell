@@ -1,0 +1,210 @@
+body {
+    background-color: white;
+    color: #083594;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #083594;
+  }
+  
+  .navbar {
+    background-color: rgb(8, 83, 148);
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .profile-card {
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  .profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid rgb(8, 83, 148);
+}
+
+  .bg-light {
+  background-color: #f8f9fa !important;
+}
+
+  h5 {
+  color: #083594;
+}
+
+/* Agranda y oscurece el botón al hacer hover */
+.btn-tarea {
+  transition: transform 0.15s, filter 0.15s;
+}
+.btn-tarea:hover {
+  transform: scale(1.08);
+  filter: brightness(0.92);
+}
+
+/* Modo oscuro */
+body.bg-dark {
+  background-color: #181a1b !important;
+  color: #f8f9fa !important;
+}
+
+/* Corrige el color de texto en modo oscuro */
+body.bg-dark,
+body.bg-dark h1,
+body.bg-dark h2,
+body.bg-dark h3,
+body.bg-dark h4,
+body.bg-dark h5,
+body.bg-dark h6,
+body.bg-dark p,
+body.bg-dark td,
+body.bg-dark th,
+body.bg-dark label,
+body.bg-dark .form-check-label {
+  color: #f8f9fa !important;
+}
+
+/* Tablas en modo oscuro */
+body.bg-dark .table,
+body.bg-dark .table-bordered,
+body.bg-dark .table-striped {
+  background-color: #23272b !important;
+  color: #f8f9fa !important;
+}
+
+body.bg-dark .table th,
+body.bg-dark .table td {
+  background-color: #23272b !important;
+  color: #f8f9fa !important;
+}
+
+body.bg-dark .table thead,
+body.bg-dark .table thead th {
+  background-color: #343a40 !important;
+  color: #f8f9fa !important;
+}
+
+body.bg-dark .table-secondary,
+body.bg-dark .table-secondary th,
+body.bg-dark .table-secondary td {
+  background-color: #343a40 !important;
+  color: #f8f9fa !important;
+}
+
+body.bg-dark .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #23272b !important;
+}
+
+body.bg-dark .table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #2c3034 !important;
+}
+
+body.bg-dark .table-bordered th,
+body.bg-dark .table-bordered td {
+  border-color: #444 !important;
+}
+
+/* Corrige fondos claros en modo oscuro */
+body.bg-dark .bg-light,
+body.bg-dark .bg-white {
+  background-color: #23272b !important;
+  color: #f8f9fa !important;
+}
+
+/* Navbar y dropdown en modo oscuro */
+body.bg-dark .navbar,
+body.bg-dark .dropdown-menu {
+  background-color: #23272b !important;
+}
+
+body.bg-dark .dropdown-item {
+  color: #f8f9fa !important;
+}
+
+body.bg-dark .dropdown-item:hover {
+  background-color: #495057 !important;
+  color: #fff !important;
+}
+
+/* Modo oscuro para tarjetas y perfil */
+body.bg-dark .card,
+body.bg-dark .profile-card {
+  background-color: #23272b !important;
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+body.bg-dark .card-body {
+  background-color: transparent !important;
+  color: #f8f9fa !important;
+}
+body.bg-dark .card-title,
+body.bg-dark .card-text {
+  color: #f8f9fa !important;
+}
+body.bg-dark .card-text.text-muted {
+  color: #b0b3b8 !important;
+}
+body.bg-dark .profile-img {
+  border-color: #f8f9fa !important;
+}
+
+/* Modal personalizado para mensaje de éxito */
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+}
+.modal-custom.show {
+  display: flex;
+}
+.modal-content-custom {
+  background: #fff;
+  color: #083594;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  text-align: center;
+  max-width: 90vw;
+  min-width: 300px;
+  position: relative;
+  animation: popin 0.3s;
+}
+@keyframes popin {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 1rem; right: 1.2rem;
+  font-size: 2rem;
+  color: #083594;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: #d90429;
+}
+body.modal-open-custom {
+  overflow: hidden;
+}
+body.bg-dark .modal-content-custom {
+  background: #23272b;
+  color: #f8f9fa;
+}
+@media (max-width: 600px) {
+  .modal-content-custom {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    min-width: 0;
+    width: 95vw;
+  }
+}

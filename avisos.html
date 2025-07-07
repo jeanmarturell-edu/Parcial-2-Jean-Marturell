@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Avisos | Portfolio Estudiante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Mi Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="avisos.html">Avisos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="sobre-mi.html">Sobre mí</a></li>
+
+          <!-- Dropdown Materias -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              Materias 2025
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="diseno-desarrollo-web.html">Diseño y Desarrollo
+                  Web</a></li>
+              <li><a class="dropdown-item" href="intro-algo.html">Introducción
+                  a la algoritmia</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+
+          <!-- Switch Modo Oscuro/Claro -->
+          <li class="nav-item d-flex align-items-center ms-3">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="modoOscuroSwitch">
+              <label class="form-check-label" for="modoOscuroSwitch" style="cursor:pointer;">
+                <span id="icono-modo"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <h1 class="mb-4">Avisos y Actividades del Cuatrimestre</h1>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-secondary">
+          <tr>
+            <th>Fecha</th>
+            <th>Actividad</th>
+            <th>Materia</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Diseño Web -->
+          <tr>
+            <td>29/04 - 22:00</td>
+            <td>TP Integrador UVA 2</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-danger">📌 Obligatorio</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>HTML - Introducción</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>HTML - Etiquetas</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>Ejercicio integrador (obligatorio)</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-danger">📌 Obligatorio</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>Formato de texto</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>Formato de cajas</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>Unidades de medida</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>29/04 - 23:59</td>
+            <td>Grid y Flexbox</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>01/05 - 07:00</td>
+            <td>Acceso especial: Parcial Virtual</td>
+            <td><span class="badge bg-success">Diseño Web</span></td>
+            <td><span class="badge bg-info">📂 Entrega</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+
+          <!-- Algoritmia -->
+          <tr>
+            <td>05/05 - 18:30</td>
+            <td>5° Encuentro Sincrónico</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-info">📺 Encuentro</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>19/05 - 18:30</td>
+            <td>6° Encuentro Sincrónico</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-info">📺 Encuentro</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>26/05 - Todo el día</td>
+            <td>Vencimiento Ejercicio Individual 3</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>26/05 - 18:30</td>
+            <td>Encuentro Sincrónico</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-info">📺 Encuentro</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>02/06 - Todo el día</td>
+            <td>Vencimiento Ejercicio Individual 4</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-primary">📝 Individual</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>02/06 - 18:30</td>
+            <td>7° Encuentro Sincrónico</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-info">📺 Encuentro</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>16/06 - 18:30</td>
+            <td>2° Parcial</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-danger">📌 Evaluación</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>23/06 - Todo el día</td>
+            <td>Vencimiento Ejercicio Individual 5</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-primary">📝 Obligatorio</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>23/06 - 18:30</td>
+            <td>8° Encuentro Sincrónico</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-info">📺 Encuentro</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+          <tr>
+            <td>30/06 - Todo el día</td>
+            <td>Recuperatorio y Final adelantado</td>
+            <td><span class="badge bg-primary">Algoritmia</span></td>
+            <td><span class="badge bg-danger">📌 Evaluación</span></td>
+            <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="scripts/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
